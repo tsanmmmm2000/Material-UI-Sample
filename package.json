@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "sample",
   "scripts": {
-    "start": "npm-run-all install build",
+    "start": "npm-run-all -p build",
     "build": "webpack -p"
   },
   "dependencies": {
