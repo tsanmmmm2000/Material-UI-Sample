@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-function Personal() {
+function Person() {
 
     const classes = useStyles();
 
@@ -42,4 +42,4 @@ function Personal() {
     );
 }
 
-ReactDOM.render(<Personal />, document.querySelector("#personal"));
+ReactDOM.render(<Person />, document.querySelector("#person"));
