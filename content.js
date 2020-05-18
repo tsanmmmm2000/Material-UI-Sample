@@ -4,7 +4,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from "@material-ui/core/Button";
 
 const initialState = {
-    person: {
+    contact: {
         firstName: "",
         lastName: "",
         address: ""
@@ -20,13 +20,13 @@ export default class Content extends React.Component {
     }
 
     handleSubmit() {
-        console.log(this.state.person);
+        console.log(this.state.contact);
     };
 
     handleChange(event) {
-        const person = this.state.person;
-        person[event.target.name] = event.target.value;
-        this.setState({ person : person });
+        const contact = this.state.contact;
+        contact[event.target.name] = event.target.value;
+        this.setState({ contact : contact });
     }
 
     render() {
@@ -37,7 +37,7 @@ export default class Content extends React.Component {
                         <TextField
                             required
                             name="firstName"
-                            value={this.state.person.firstName}
+                            value={this.state.contact.firstName}
                             label="First name"
                             onChange={this.handleChange}
                             fullWidth
@@ -47,7 +47,7 @@ export default class Content extends React.Component {
                         <TextField
                             required
                             name="lastName"
-                            value={this.state.person.lastName}
+                            value={this.state.contact.lastName}
                             label="Last name"
                             onChange={this.handleChange}
                             fullWidth
@@ -57,7 +57,7 @@ export default class Content extends React.Component {
                         <TextField
                             required
                             name="address"
-                            value={this.state.person.address}
+                            value={this.state.contact.address}
                             label="Address"
                             onChange={this.handleChange}
                             fullWidth
